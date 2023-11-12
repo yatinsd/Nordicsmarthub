@@ -40,7 +40,7 @@ int main() {
     // Initialize the relay status
     RelayStatus relay_statuses[RELAY_PINS_COUNT];
     for (int i = 0; i < RELAY_PINS_COUNT; i++) {
-        relay_statuses[i] = (RelayStatus){.relay_index = i, .status = false};
+        relay_statuses[i] = (RelayStatus){.relay_index = i, .status = 0U};
     }
 
     // Ask the user which display input they want to switch to
@@ -52,7 +52,7 @@ int main() {
     switch_display_input(input_number);
 
     // Start a loop to monitor the relay status and send updates to the nRF7200 DK
-    while (true) {
+    while (1U) {
         // Read the relay status
         for (int i = 0; i < RELAY_PINS_COUNT; i++) {
             // ...
