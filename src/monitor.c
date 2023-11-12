@@ -7,13 +7,16 @@
 Author: Yatin
 */ 
 
-float Monitor_activeswitch
+__UINT16_MAX__ Monitor_activeswitch
 {
 
 
 }
 
-float Monitor_
+__UINT8_MAX__ Monitor_Connection
+{
+
+}
 
 
 
