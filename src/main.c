@@ -23,9 +23,9 @@ void switch_display_input(int input_number) {
 
     // Switch the relay the required number of times
     for (int i = 0; i < num_switches; i++) {
-        set_relay_status(&(RelayStatus){.relay_index = 0, .status = true});
+        set_relay_status(&(RelayStatus){.relay_index = 0, .status = 1U});
         sleep(1 / 10); // Wait for 0.1 seconds
-        set_relay_status(&(RelayStatus){.relay_index = 0, .status = false});
+        set_relay_status(&(RelayStatus){.relay_index = 0, .status = 0U});
         sleep(1 / 10); // Wait for 0.1 seconds
     }
 }
