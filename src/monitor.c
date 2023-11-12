@@ -7,6 +7,13 @@
 Author: Yatin
 */ 
 
+
+__UINT16_MAX__ Monitor_activeswitch();
+
+
+
+
+
 __UINT16_MAX__ Monitor_activeswitch
 {
 

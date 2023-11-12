@@ -1,0 +1,1 @@
+extern __UINT16_MAX__ Monitor_activeswitch();
